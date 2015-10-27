@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>The Scala.js Tutorial</title>
+</head>
+<body>
+
+<canvas id="canvas"></canvas>
+
+
+
+<!-- Include Scala.js compiled code -->
+<script type="text/javascript" src="./target/scala-2.11/scalajslearn-fastopt.js"></script>
+<script type="text/javascript" src="./target/scala-2.11/scalajslearn-jsdeps.js"></script>
+<script type="text/javascript" src="/workbench.js"></script>
+<script>
+    tutorial.webapp.Sierpinski().main(document.getElementById('canvas'));
+</script>
+
+
+</body>
+</html>
