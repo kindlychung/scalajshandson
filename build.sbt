@@ -20,6 +20,9 @@ libraryDependencies += "be.doeraene" %%% "scalajs-jquery" % "0.8.0"
 
 libraryDependencies += "com.lihaoyi" %%% "utest" % "0.3.0" % "test"
 
+libraryDependencies += "com.lihaoyi" %%% "scalatags" % "0.4.6"
+
+
 // core = essentials only. No bells or whistles.
 libraryDependencies += "com.github.japgolly.scalajs-react" %%% "core" % "0.9.2"
 /////////////////// libs end ///////////////////////////////
@@ -39,8 +42,9 @@ testFrameworks += new TestFramework("utest.runner.Framework")
 workbenchSettings
 
 // live reload needs to know where to begin
-//bootSnippet := "tutorial.webapp.TutorialApp.main();"
-bootSnippet := "tutorial.webapp.Sierpinski().main(document.getElementById('canvas'));"
+//bootSnippet := "tutorial.webapp.TutorialApp().main();"
+//bootSnippet := "tutorial.webapp.Sierpinski().main(document.getElementById('canvas'));"
+bootSnippet := "tutorial.webapp.Sketchpad().main(document.getElementById('canvas'));"
 
 updateBrowsers <<= updateBrowsers.triggeredBy(fastOptJS in Compile)
 ///////////////////// live reload end //////////////////////////////////
