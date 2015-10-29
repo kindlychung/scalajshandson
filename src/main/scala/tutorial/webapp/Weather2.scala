@@ -35,6 +35,7 @@ object Weather2 {
       fetchWeather(box.value)
     }
 
+
     target.appendChild(
       div(
         h1("Weather Search"),

@@ -1,7 +1,8 @@
 out/
 .idea/
 project/target/
-target/
-!target/scala-2.11/*.js
+target/resolution-cache/
+target/streams/
+target/scala-2.11/classes/
 
 
