@@ -50,3 +50,12 @@ updateBrowsers <<= updateBrowsers.triggeredBy(fastOptJS in Compile)
 ///////////////////// live reload end //////////////////////////////////
 
 
+//////////////// stage task to please heroku ////////////////////////
+val stage = taskKey[Unit]("Stage task")
+
+val Stage = config("stage")
+
+stage := { }
+//////////////// stage task to please heroku end ////////////////////////
+
+
